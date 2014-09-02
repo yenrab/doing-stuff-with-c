@@ -11,10 +11,8 @@ int main(){
 	FILE* userDataFile = giveMeAnOpenFile();
 	int found = fscanf(userDataFile,"%d %d",&firstInt,&secondInt);
 	fclose(userDataFile);
-	printf("found: %d",found);
 	printf("%d * %d = %d\n",firstInt,secondInt,firstInt*secondInt);
 	printf("%d + %d = %d\n",firstInt,secondInt,firstInt+secondInt);
 	printf("%d - %d = %d\n",firstInt,secondInt,firstInt-secondInt);
-
 	return 0;
 }
