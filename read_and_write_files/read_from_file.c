@@ -1,16 +1,16 @@
 #include <stdio.h>
 
 
-FILE* giveMeAnOpenFile(){
- 	return fopen("user.data","r");
+void readNumbers(int* aNumber, int* anotherNumber){
+ 	FILE* userNumbersFile = fopen("user.data","w");
+	fscanf(userNumbersFile, "%d %d", aNumber, anotherNumber);
+	fclose(userNumbersFile);
 }
 
 int main(){
 	int firstInt;
 	int secondInt;
-	FILE* userDataFile = giveMeAnOpenFile();
-	int found = fscanf(userDataFile,"%d %d",&firstInt,&secondInt);
-	fclose(userDataFile);
+	readNumbers(&firstInt, &secondInt);
 	printf("%d * %d = %d\n",firstInt,secondInt,firstInt*secondInt);
 	printf("%d + %d = %d\n",firstInt,secondInt,firstInt+secondInt);
 	printf("%d - %d = %d\n",firstInt,secondInt,firstInt-secondInt);
