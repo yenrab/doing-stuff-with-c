@@ -1,1 +1,1 @@
-This repo contains the example source for the Doing Stuff With C book
+This repo contains the booklet and example source for the Doing Stuff With C course.
