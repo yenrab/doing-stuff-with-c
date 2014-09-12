@@ -3,12 +3,8 @@
 
 void checkDoubles(){
  	
-	double aNumber = -10.25;
-	if (aNumber > 0 && aNumber < 1){
-		printf("%f is only fractional.\n", aNumber);
-	}
-	else if (aNumber < 0 && aNumber > -1)
-	{
+	double aNumber = 0.25;
+	if ((aNumber > 0 && aNumber < 1) || (aNumber < 0 && aNumber > -1)){
 		printf("%f is only fractional.\n", aNumber);
 	}
 	else{

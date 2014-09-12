@@ -2,7 +2,7 @@
 
 
 void readNumbers(int* aNumber, int* anotherNumber){
- 	FILE* userNumbersFile = fopen("user.data","w");
+ 	FILE* userNumbersFile = fopen("user.data","r");
 	fscanf(userNumbersFile, "%d %d", aNumber, anotherNumber);
 	fclose(userNumbersFile);
 }

@@ -8,8 +8,7 @@ void checkInts(){
 	if(aNumber == 0){
 		printf("0 is neither even nor odd.\n");
 	}
-	else if (remainder == 0)
-	{
+	else if (remainder == 0){
 		printf("%d is even.\n", aNumber);
 	}
 	else{
